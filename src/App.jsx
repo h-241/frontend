@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const serverURL = "http://localhost:5050";
+const serverURL = "https://email-collection-server-shridharapavel.replit.app";
+// const serverURL = "http://localhost:5050";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -21,7 +22,7 @@ function App() {
         body: JSON.stringify({ email: email }),
       });
       const data = await response.json();
-      // console.log(data);
+      console.log(data);
     } catch (err) {
       console.log(err);
     }
