@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import Navigation from "./pages/components/Navigation";
+
+// pages
 // import Landing from "./pages/Landing.jsx";
+
+// components
+import Navigation from "./pages/components/Navigation";
+import TabbedContainer from "./pages/components/Tabcontainer";
+
+// assests
 import pillar from "./assets/pillars.webp";
 
 const serverURL = "https://email-collection-server-shridharapavel.replit.app";
@@ -25,6 +32,7 @@ function App() {
       });
       const data = await response.json();
       console.log(data);
+      alert("Thanks for signing up!");
     } catch (err) {
       console.log(err);
     }
@@ -59,65 +67,15 @@ function App() {
           ></input>
 
           <button
-            className="bg-gradient-to-br from-purple to-orange justify-center p-3  font-medium tracking-wide text-white rounded-3xl border-0 border-purple-600 border-solid leading-[150%] max-md:px-5"
+            className="bg-gradient-to-br from-purple_btn to-orange_btn justify-center p-3  font-medium tracking-wide text-white rounded-3xl border-0 border-purple-600 border-solid leading-[150%] max-md:px-5"
             type="submit"
           >
             Sign up
           </button>
         </form>
 
-        <div className="flex flex-col items-center self-center px-16 pt-9 pb-20 mt-40 max-w-full rounded-3xl bg-stone-300 w-[940px] max-md:px-5 max-md:mt-10">
-          <div className="flex gap-5 mb-4 max-md:flex-wrap">
-            <div className="flex flex-col items-center self-end mt-36 max-md:hidden max-md:mt-10">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b002d57f2ef45515bb1dafc53ec84116d621233e7363bad8ddd697e01cd213fc?"
-                className="aspect-square w-[29px]"
-              />
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                className="mt-14 aspect-[0.97] w-[29px] max-md:mt-10"
-              />
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                className="mt-14 aspect-[0.97] w-[29px] max-md:mt-10"
-              />
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                className="mt-28 aspect-[0.97] w-[29px] max-md:mt-10"
-              />
-            </div>
-            <div className="flex flex-col grow shrink-0 text-base font-medium tracking-wide leading-7 basis-0 text-neutral-600 w-fit max-md:max-w-full">
-              <div className="flex gap-0 self-center max-w-full text-white whitespace-nowrap leading-[150%] w-[195px]">
-                <div className="flex flex-col justify-center items-start bg-zinc-800">
-                  <div className="justify-center p-3 rounded-3xl border-0 border-purple-600 border-solid max-md:px-5">
-                    humans
-                  </div>
-                </div>
-                <div className="justify-center p-3 rounded-3xl border-0 border-purple-600 border-solid bg-zinc-800 max-md:px-5">
-                  agents
-                </div>
-              </div>
-              <div className="mt-24 text-3xl max-md:mt-10 max-md:max-w-full">
-                Would you like to be paid by AI?
-              </div>
-              <div className="mt-9 max-md:max-w-full">
-                We're developing a platform where AI agents can delegate tasks
-                and hire humans to complete them. <br />
-                <br />
-                In the H241 ecosystem, we utilize blockchain for secure
-                payments, enabling AI to pay reliably. The AI agent can also
-                ensure that tasks are completed accurately. <br />
-                <br />
-                Get ready for a new era where AI agents are the ones
-                compensating us.
-              </div>
-            </div>
-          </div>
-        </div>
+        <TabbedContainer />
+
         <div className="self-start mt-40 text-xl font-bold leading-5 uppercase text-neutral-700 tracking-[3px] max-md:mt-10 max-md:max-w-full">
           Discover
         </div>

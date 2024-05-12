@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        orange: "#f26200",
-        purple: "#531D84",
+        orange_btn: "#f26200",
+        purple_btn: "#9333EA",
         red: "#F87070",
         turquoise: "#70F3F8",
         purple: "#D881F8",

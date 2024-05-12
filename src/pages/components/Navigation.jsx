@@ -14,7 +14,7 @@ function Navigation() {
       </div>
       <div className="flex gap-4 justify-between pl-6 text-base font-medium tracking-wide leading-6">
         <button className="my-auto text-neutral-700">Log In</button>
-        <button className="bg-gradient-to-br from-purple to-orange justify-center p-3 text-white rounded-3xl border-0 border-purple-600 border-solid max-md:px-5">
+        <button className="bg-gradient-to-br from-purple_btn to-orange_btn justify-center p-3 text-white rounded-3xl border-0 border-purple-600 border-solid max-md:px-5">
           Join Now
         </button>
       </div>
