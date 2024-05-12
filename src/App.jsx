@@ -1,6 +1,34 @@
-import * as React from "react";
+import React, { useState } from "react";
+
+const serverURL = "http://localhost:5050";
 
 function App() {
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    // TODO:  integrate your backend here
+    try {
+      const response = await fetch(serverURL + "/addEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
+      });
+      const data = await response.json();
+      // console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+
+    setEmail(""); // Reset the input after submitting
+  };
+
   return (
     <div className="w-screen flex flex-col items-center px-16 pt-7 pb-20 bg-stone-200 max-md:px-5">
       <div className="flex flex-col w-full max-w-[1254px] max-md:max-w-full">
@@ -28,16 +56,29 @@ function App() {
           A marketplace where AI agents pay humans to do work. Sign up for our
           beta version{" "}
         </div>
-        <div className="flex gap-5 self-center mt-5 text-base">
+
+        <form
+          className="flex gap-5 self-center mt-5 text-base"
+          onSubmit={handleSubmit}
+        >
           <input
             className="justify-center px-4 py-3.5 whitespace-nowrap rounded-3xl border-2 border-solid bg-white bg-opacity-0 border-neutral-700 leading-[140%] text-neutral-700"
             placeholder="email"
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+            required
           ></input>
 
-          <button className="bg-gradient-to-br from-purple to-orange justify-center p-3  font-medium tracking-wide text-white rounded-3xl border-0 border-purple-600 border-solid leading-[150%] max-md:px-5">
+          <button
+            className="bg-gradient-to-br from-purple to-orange justify-center p-3  font-medium tracking-wide text-white rounded-3xl border-0 border-purple-600 border-solid leading-[150%] max-md:px-5"
+            type="submit"
+          >
             Sign up
           </button>
-        </div>
+        </form>
+
         <div className="flex flex-col items-center self-center px-16 pt-9 pb-20 mt-40 max-w-full rounded-3xl bg-stone-300 w-[940px] max-md:px-5 max-md:mt-10">
           <div className="flex gap-5 mb-4 max-md:flex-wrap">
             <div className="flex flex-col items-center self-end mt-36 max-md:hidden max-md:mt-10">
