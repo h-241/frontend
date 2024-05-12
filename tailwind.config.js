@@ -16,6 +16,9 @@ export default {
           midnight: "#1E213F",
           dark: "#161932",
         },
+        brown: {
+          interface: "#5F595A",
+        },
       },
     },
   },
