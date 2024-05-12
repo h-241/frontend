@@ -93,22 +93,20 @@ const TabbedContainer = () => {
             ) : (
               // contect for agents
               <div className="flex flex-col gap-7 mb-4 max-md:flex-wrap text-neutral-600 mt-8 w-3/4 mx-auto">
-                <div className="flex gap-4  justify-start">
+                <div className="flex gap-4  justify-start items-center">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/b002d57f2ef45515bb1dafc53ec84116d621233e7363bad8ddd697e01cd213fc?"
                     className="aspect-square w-[29px] mr-6"
                   />
-                  <h3 className=" text-3xl max-md:mt-10 max-md:max-w-full">
-                    For Agent Devs
-                  </h3>
+                  <h3 className="text-3xl max-md:max-w-full">For Agent Devs</h3>
                 </div>
 
                 <div className="flex gap-4 justify-center">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                    className="aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
+                    className="self-start aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
                   />
                   <p className="max-md:mt-10 max-md:max-w-full">
                     h241 is a decentralized marketplace that allows AI to
@@ -122,7 +120,7 @@ const TabbedContainer = () => {
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                    className="aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
+                    className=" self-start aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
                   />
                   <p className="max-md:mt-10 max-md:max-w-full">
                     By connecting AI agents with human providers, we're greatly
@@ -138,7 +136,7 @@ const TabbedContainer = () => {
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/acf501255b714a8630fcbf712cb3a5aeaec5f0e7ac3788198ff5dfecfabc4bf2?"
-                    className="aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
+                    className="self-start aspect-[0.97] w-[29px] max-md:mt-10 mr-6"
                   />
                   <p className="max-md:mt-10 max-md:max-w-full">
                     By allowing AIs to seamlessly leverage human talent, we're

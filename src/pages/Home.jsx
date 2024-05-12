@@ -83,11 +83,10 @@ function Home() {
           </span>
         </div>
         <div className="mt-8 text-lg leading-7 text-stone-500 w-[840px] max-md:max-w-full">
-          Scelerisque auctor dolor diam tortor, fames faucibus non interdum
-          nunc.
+          Whether your project needs a touch of creativity, meticulous data
+          analysis, or complex problem solving, our decentralized marketplace is
+          teeming with ready and able talent.
           <br />
-          Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing
-          lacinia.
         </div>
         <div className="flex gap-4 justify-center self-start py-4 mt-8 text-xl font-medium tracking-wide leading-6 rounded-lg text-zinc-600">
           <div>Request Service</div>
@@ -125,11 +124,10 @@ function Home() {
             </span>
           </div>
           <div className="mt-8 mr-6 ml-14 text-lg leading-7 text-right text-stone-500 max-md:mr-2.5 max-md:max-w-full">
-            Scelerisque auctor dolor diam tortor, fames faucibus non interdum
-            nunc.
+            We leverage AI technology to verify evidence of completed work,
+            ensuring that every task meets our standards before any payment is
+            released.
             <br />
-            Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing
-            lacinia.
           </div>
           <div className="flex gap-4 justify-center self-end py-4 mt-6 text-xl font-medium tracking-wide leading-6 text-right rounded-lg text-zinc-600">
             <div>Submit Evidence</div>
